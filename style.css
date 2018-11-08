@@ -4,22 +4,12 @@
 }
 
 body {
-    height: auto;
+    height: 440px;
     width: 400px;
     background-image: url("./assets/bg.png");
 }
 
-h1 {
-    font-family: codesmithFont;
-    font-size: 24px;
-    font-weight: bolder;
-    color: #34495e;
-    text-align: center;
-    margin: 10px;
-}
-
 img {
-    padding-top: 10px;
     display: block;
     height: auto;
     width: 40%;
@@ -29,9 +19,9 @@ img {
     border-radius: 3px;
 }
 
-#title, #industry, #salary, #thought {
+#title, #industry, #salary, #thought, #help-text {
     font-family: codesmithFont;
-    color: #676e7b;;
+    color: #34495e;;
     text-align: center;
     margin: 5px;
 }
@@ -39,15 +29,59 @@ img {
 #title {
     padding-top: 10px;
     font-size: 24px;
-    color: #34495e;
-}
-
-#industry, #salary, #thought {
-    font-size: 18px;
+    color: #676e7b;
 }
 
 #thought {
     font-size: 36px;
     margin: 10px;
-    color: ##676e7b;;
+    color: #676e7b;;
 }
+
+#industry, #help-text {
+    font-size: 18px;
+    color: #676e7b;
+}
+
+#salary {
+    font-size: 22px;
+    color: #676e7b;
+}
+
+#help-text {
+    padding-top: 5px;
+}
+
+#slack {
+    display: inline-block;
+    width: 120px;
+    height: 20px;
+    display: inline-block;
+    margin-top: 10px;
+    margin-left: 50px;
+    padding: 10px;
+    background-color: green;  
+    border-radius: 3px;
+    color: white;
+    text-decoration: none;
+    text-align: center;
+    font-family: codesmithFont;
+    font-size: 18px;
+  }
+
+#mail {
+    display: inline-block;
+    width: 120px;
+    height: 20px;
+    display: inline-block;
+    margin-top: 10px;
+    margin-left: 20px;
+    padding: 10px;
+    background-color: Crimson;  
+    border-radius: 3px;
+    color: white;
+    text-decoration: none;
+    text-align: center;
+    font-family: codesmithFont;
+    font-size: 18px;
+  }
