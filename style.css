@@ -1,12 +1,53 @@
+@font-face {
+    font-family: codesmithFont;
+    src: url(./assets/HKGrotesk-SemiBold.woff2);
+}
+
 body {
-    height: 400px;
+    height: auto;
     width: 400px;
+    background-image: url("./assets/bg.png");
 }
 
 h1 {
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: codesmithFont;
     font-size: 24px;
-    font-weight: bold;
-    color: black;
+    font-weight: bolder;
+    color: #34495e;
     text-align: center;
+    margin: 10px;
+}
+
+img {
+    padding-top: 10px;
+    display: block;
+    height: auto;
+    width: 40%;
+    margin-left: auto;
+    margin-right: auto;
+    border: 4px solid rgba(70, 162, 228, 0.75);
+    border-radius: 3px;
+}
+
+#title, #industry, #salary, #thought {
+    font-family: codesmithFont;
+    color: #676e7b;;
+    text-align: center;
+    margin: 5px;
+}
+
+#title {
+    padding-top: 10px;
+    font-size: 24px;
+    color: #34495e;
+}
+
+#industry, #salary, #thought {
+    font-size: 18px;
+}
+
+#thought {
+    font-size: 36px;
+    margin: 10px;
+    color: ##676e7b;;
 }

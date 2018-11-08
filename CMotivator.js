@@ -3,9 +3,10 @@ document.addEventListener('DOMContentLoaded', function() {
     const outcomes1 = {
         title: 'Senior Software Engineer',
         industry: 'Internet',
-        salary: '130k',
+        salary: '$130,000',
       };
       
+    deepThought();
     createImage();
     createText(outcomes1);
 
@@ -14,9 +15,18 @@ document.addEventListener('DOMContentLoaded', function() {
   }, false);
 
 
+  function deepThought() {
+      const thoughts = ['This could be you!'];
+      const text = document.createElement('P');
+        text.setAttribute('id', 'thought');
+        text.textContent = thoughts[0];
+        const body = document.getElementById('body');
+        body.appendChild(text);
+  }
+  
   function createImage() {
       const image = document.createElement('IMG');
-      image.src = 'frank.png';
+      image.src = './assets/frank.png';
 
       const body = document.getElementById('body');
       body.appendChild(image);
