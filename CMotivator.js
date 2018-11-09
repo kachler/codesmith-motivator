@@ -66,7 +66,7 @@ const images = ['./assets/adrian.png', './assets/chris.png', './assets/danni.png
   './assets/tim.png', './assets/victor.png', './assets/darryl.png', './assets/evgenii.png', './assets/jim.png', './assets/tony.png'];
 
 function deepThought() {
-    const thoughts = [`This could be you!`, `Dont give up!`, `Opportunities await!`];
+    const thoughts = [`This could be you!`];
     const text = document.createElement('P');
     text.setAttribute('id', 'thought');
     text.textContent = thoughts[Math.floor(Math.random() * thoughts.length)];
@@ -126,7 +126,7 @@ function createMail() {
     const link = document.createElement('a');
     link.textContent = "HELP!!!";
     link.setAttribute('id', 'mail');
-    link.onclick = () => window.open("mailto:will.sentence@codesmith.io");
+    link.onclick = () => window.open("mailto:will.sentence@codesmith.io?subject=HELP!!!");
     const body = document.getElementById('body');
     body.appendChild(link);
 }
